@@ -6,6 +6,8 @@ Red='\033[0;31m'          # Red
 Yellow='\033[0;33m'       # Yellow
 Blue='\033[0;34m'         # Blue
 
+echo -e "${Blue} \nThis File Guessing game is Written by ****************     KAKEMBO FREDRICK ELISHAMA     *****************${Color_Off} \n"
+
 num_of_files=$(ls | wc -l)
 
 function your_guess {
@@ -34,5 +36,5 @@ then
     echo -e "${Blue} \nCONGRATULATIONS..!!! Your guess is correct ${Color_Off}"
     exit
 else
-    echo -e "${Red} Please I didnot understand your input. Check that your input is an integer and try again. ${Color_Off}"
+    echo -e "${Red}\nSorry... I didnot understand your input. Please Check that your input is an integer and try again. ${Color_Off}"
 fi
